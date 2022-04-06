@@ -1,0 +1,173 @@
+
+/* ---------- header ----------*/
+header {
+    width: 100%;
+    height: auto;
+}
+
+#gnb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background-color: var(--bg-color);
+    box-shadow: 0px 3px 8px rgba(30, 52, 125, 0.2);
+    z-index: 999;
+}
+
+#gnb .logo {
+    float: left;
+}
+
+#gnb nav {
+    float: right;
+}
+
+#gnb nav ul.header_manu {
+    list-style: none;
+    display: flex;
+}
+
+#gnb nav ul.header_manu li {
+    width: 150px;
+    height: 65px;
+    margin: 0;
+}
+
+#gnb nav ul.header_manu li>a {
+    position: relative;
+    color: var(--text-color);
+    line-height: 65px;
+    padding: 1px 3px;
+    transition: all .3s ease-out;
+}
+
+#gnb nav ul.header_manu li>a::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background-color: var(--primary-color);
+    height: 18px;
+    width: 0;
+    transition: all .3s ease-out;
+    z-index: -1;
+}
+
+#gnb nav ul.header_manu li>a:hover::before,
+#gnb nav ul.header_manu li.active>a::before {
+    width: 100%;
+}
+
+#gnb nav ul.header_manu li.active>a,
+#gnb nav ul.header_manu li>a:hover,
+#gnb nav ul.header_manu li>a:focus {
+    color: var(--bg-color);
+}
+
+
+#main_visual {
+    display: block;
+    width: 100%;
+    height: 550px;
+}
+
+#main_visual .visual_wrap {
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#main_visual .slogun {
+    width: 40%;
+}
+
+#main_visual .slogun p {
+    display: block;
+    font-size: 32px;
+    font-weight: 500;
+    color: #555;
+}
+
+#main_visual .slogun p+p {
+    margin-left: 75px;
+}
+
+#main_visual .slogun p.tit {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+#main_visual .image {
+    width: 40%;
+    margin-right: 50px;
+}
+
+#main_visual .image>img {
+    width: 100%;
+    display: block;
+}
+/* ---------- //header ----------*/
+
+/* ---------- main ----------*/
+/* #its_me */
+
+/* #project */
+
+#project .project_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+#project .pc{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 160px;
+}
+#project .mobile{
+    width: 100px;
+    height: 200px;
+    position: relative;
+    top: -100px;
+    left: -40px;
+}
+#project .computer,
+#project .iphone{
+    width: 100%;
+    position: absolute;
+}
+#project .pc a{
+    display: block;
+    width: 470px;
+    height: 264px;
+    position: absolute;
+    overflow: hidden;
+    top: 15px;
+    left: 15px;
+}
+#project .mobile a{
+    display: block;
+    width: 70px;
+    height: 153px;
+    position: absolute;
+    overflow: hidden;
+    top: 19px;
+    left: 15px;
+}
+#project .scroll img{
+    width: 100%;
+    position: relative;
+}
+
+/* #design */
+
+/* #contact */
+#contact{
+    background-color: var(--primary-color);
+}
+/* ---------- //main ----------*/
