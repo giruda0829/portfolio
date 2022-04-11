@@ -1,7 +1,11 @@
+@import "font.css";
+
 *{margin: 0;padding: 0;border: 0;box-sizing: border-box;}
-html,body{font-size: 14px; color: #333;background-color: #e3eeff;}
+html,body{font-size: 14px; color: #333;
+    font-family: 'GmarketSansMedium';}
 ul{list-style: none;}
 a{text-decoration: none;}
+span{display: block;}
 :root{
     --primary-color:#2465ce;
     --secondary-color: #bc81eb;
@@ -10,6 +14,7 @@ a{text-decoration: none;}
 }
 .point{
     color: var(--primary-color);
+    text-transform: uppercase;
 }
 .inner{
     max-width: 1280px;
@@ -18,8 +23,8 @@ a{text-decoration: none;}
 
 /* ---------- header ----------*/
 .menu_tit{
-    font-weight: bold;
     text-transform: uppercase;
+    font-family: 'GmarketSansLight';
 }
 
 /* ---------- main ----------*/
@@ -30,18 +35,19 @@ a{text-decoration: none;}
     position: relative;
 }
 .section_tit>.tit{
+    font-family: 'GmarketSansBold';
     display: block;
     font-size: 24px;
     text-transform: uppercase;
-    font-weight: 800;
     text-align: center;
     width: 100%;
+    margin-bottom: 10px;
 }
 .section_tit>.sub_tit{
     display: block;
     font-size: 36px;
     text-transform: uppercase;
-    font-weight: 800;
+    font-family: 'GmarketSansMedium';
     text-align: center;
     width: 100%;
     color: var(--primary-color);
