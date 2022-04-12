@@ -1,59 +1,39 @@
-$(function () {
-  /* top_menu */
-  const topmenu = $("#gnb nav>ul.header_manu li");
-  topmenu.click(function (e) {
-    e.preventDefault();
-    let target = $(this);
-    let index = target.index();
-    let section = $(".section").eq(index);
-    let offset = section.offset().top;
-    $("html, body").animate({ scrollTop: offset }, 800);
-  });
+const topmenu = $("#gnb ul.header_manu>li");
+const sections = $(".section");
+const speed = 500;
 
-  $(window).scroll(function () {
-    let scrollTop = $(window).scrollTop();
-    if (scrollTop >= $("#its_me").offset().top) {
-      $("#gnb nav>ul.header_manu li")
-        .eq(0)
-        .addClass("active")
-        .siblings()
-        .removeClass("active");
-    }
-    if (scrollTop >= $("#project").offset().top - 200) {
-      $("#gnb nav>ul.header_manu li")
-        .eq(1)
-        .addClass("active")
-        .siblings()
-        .removeClass("active");
-    }
-    if (scrollTop >= $("#design").offset().top - 200) {
-      $("#gnb nav>ul.header_manu li")
-        .eq(2)
-        .addClass("active")
-        .siblings()
-        .removeClass("active");
-    }
-    if (scrollTop >= $("#contact").offset().top - 200) {
-      $("#gnb nav>ul.header_manu li")
-        .eq(3)
-        .addClass("active")
-        .siblings()
-        .removeClass("active");
-    }
-  });
-
-  /* project_scroll */
-
-  $(".scroll").hover(
-    function () {
-      let pah = $(this).innerHeight();
-      let img = $(this).find("img");
-      let imgh = img.innerHeight();
-      img.stop().animate({ top: pah - imgh }, 3000);
-    },
-    function () {
-      let img = $(this).find("img");
-      img.stop().animate({ top: 0 }, 3000);
-    }
-  );
+topmenu.click(function (e) {
+  e.preventDefault();
+  let target = $(this);
+  let index = target.index();
+  let section = $(".section").eq(index);
+  let offset = section.offset().top;
+  $("html, body").animate({ scrollTop: offset }, 1500, "easeOutCirc");
 });
+
+$(window).on("scroll", function () {
+  let scrollTop = $(window).scrollTop();
+  sections.each(function (i, o) {
+    if (scrollTop >= sections.eq(i).offset().top - speed) {
+      console.log(sections.eq(i).offset().top - speed);
+      topmenu.eq(i).addClass("active").siblings().removeClass("active");
+      section.eq(i).find(".left").addClass("in");
+      section.eq(i).find(".right span").addClass("show");
+    }
+  });
+});
+
+/* project_scroll */
+
+$(".scroll").hover(
+  function () {
+    let pah = $(this).innerHeight();
+    let img = $(this).find("img");
+    let imgh = img.innerHeight();
+    img.stop().animate({ top: pah - imgh }, 3000);
+  },
+  function () {
+    let img = $(this).find("img");
+    img.stop().animate({ top: 0 }, 3000);
+  }
+);
