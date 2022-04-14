@@ -1,12 +1,12 @@
-const topmenu = $("#gnb ul.header_manu>li");
-const sections = $(".section");
+const topmenu = $("#gnb nav ul.header_manu li");
+const sections = $("main .section");
 const speed = 500;
 
 topmenu.click(function (e) {
   e.preventDefault();
   let target = $(this);
   let index = target.index();
-  let section = $(".section").eq(index);
+  let section = sections.eq(index);
   let offset = section.offset().top;
   $("html, body").animate({ scrollTop: offset }, 1500, "easeOutCirc");
 });

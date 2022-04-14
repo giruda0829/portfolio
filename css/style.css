@@ -132,7 +132,7 @@ header {
     position: relative;
 }
 #main_visual::before{
-    background-image: url(../images/header/bg.png);
+    background-image: url(https://res.cloudinary.com/giruda1113/image/upload/v1649753769/web%20portfolio/bg_uhcwrd.png);
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -268,39 +268,61 @@ header {
 .skill{
     padding-bottom: 80px;
 }
-.skill .progress{
-    margin-top: 80px;
-}
-.skill .progress li{
-    margin: 7px auto;
-}
-.skill .progress .name{
-    width: 20%;
-}
-.skill .progress .tit{
+.charts{
     width: 100%;
-    text-transform: none;
-    font-size: 1.3em;
-    text-align: right;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.skill .progress-bar{
+.charts .chart{
+    margin: 0 20px;
     position: relative;
-    top: -25px;
-    left: 280px;
-    width: 780px;
-    height: 25px;
-    background-color: #00000015;
-    border-radius: 50px;
 }
-.skill .bar{
+.charts .chart h2{
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 400px;
-    background-color: linear-gradient(to left var(--primary-color) 0%,#1f3edc 100%);
-    border-radius: 50px;
-    z-index: 100;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%,-50%);
+}
+.charts .chart svg{
+    width: 220px;
+    height: 220px;
+}
+circle{
+    fill: #ffffff;
+    stroke-dasharray: 535;
+    stroke-dashoffset: 535;
+    stroke-width: 20;
+    stroke: #1787ff;
+    transform: rotate(-90deg);
+    transform-origin:50% 50%;
+    stroke-linecap: round;
+}
+@keyframes line{
+    from{stroke-dashoffset: 628;}
+    to{stroke-dashoffset: 0;}
+}
+
+.charts .chart:nth-child(2) circle,
+.charts .chart:nth-child(6) circle{
+    stroke: #ff9c23;
+}
+.charts .chart:nth-child(3) circle,
+.charts .chart:nth-child(7) circle{
+    stroke: #8914ff;
+}
+.charts .chart:nth-child(4) circle,
+.charts .chart:nth-child(8) circle{
+    stroke: #ff141c;
+}
+.charts .tit{
+    text-transform: none;
+    font-size: 18px;
+    font-family: 'GmarketSansMedium';
+    text-align: center;
+    margin-top: 15px;
 }
 /* //.skill */
 

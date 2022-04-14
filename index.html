@@ -36,6 +36,7 @@
     <meta name="twitter:image" content="shear_img_twt.jpg" />
 
     <title>전화연의 포트폴리오</title>
+    
     <!-- 공통 css -->
     <link rel="stylesheet" href="css/reset.css" />
     <!-- css -->
@@ -47,6 +48,7 @@
     <!-- js -->
     <!-- jQ -->
     <script src="jq/scroll.js"></script>
+    <script src="jq/chart.js"></script>
   </head>
   <body>
     <div id="skip_menu"></div>
@@ -102,8 +104,8 @@
               </div>
               <div class="image">
                 <img
-                  src="images/header/me.png"
-                  alt="흰 와이셔츠에 당당한 자세의 프로필 사진"
+                  src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/me_hol1hy.png"
+                  alt="프로필 사진"
                 />
               </div>
             </div>
@@ -122,9 +124,9 @@
                 <div class="its_me_title">
                   <div class="its_me_img">
                     <img
-                        src="images/header/me.png"
-                        alt="흰 와이셔츠에 당당한 자세의 프로필 사진"
-                      />
+                  src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/me_hol1hy.png"
+                  alt="프로필 사진"
+                />
                   </div>
                   <div class="its_me_text">
                     <span class="tit point">두려워하지 않는 디자이너 </br><span class="bold">전화연입니다!</span></span>
@@ -189,72 +191,71 @@
               <div class="section_tit">
                 <span class="sub_tit">skill</span>
               </div>
-              <div class="progress">
-                <ul>
-                  <li>
-                    <div class="name">
-                      <span class="point tit">Photoshop</span>
-                    </div>
-                    <div class="progress-bar">
-                      <div class="bar"></div>
-                      <div class="rate point" data-rate="90"></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="name">
-                      <span class="point tit">Illustration</span>
-                    </div>
-                    <div class="progress-bar">
-                      <div class="bar"></div>
-                      <div class="rate" data-rate="90"></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="name">
-                      <span class="point tit">HTML</span>
-                    </div>
-                    <div class="progress-bar">
-                      <div class="bar"></div>
-                      <div class="rate" data-rate="85"></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="name">
-                      <span class="point tit">CSS</span>
-                    </div>
-                    <div class="progress-bar">
-                      <div class="bar"></div>
-                      <div class="rate" data-rate="85"></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="name">
-                      <span class="point tit">SCSS</span>
-                    </div>
-                    <div class="progress-bar">
-                      <div class="bar"></div>
-                      <div class="rate" data-rate="60"></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="name">
-                      <span class="point tit">Javascript</span>
-                    </div>
-                    <div class="progress-bar">
-                      <div class="bar"></div>
-                      <div class="rate" data-rate="60"></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="name">
-                      <span class="point tit">jQuery</span>
-                    </div>
-                    <div class="progress-bar">
-                      <div class="bar"></div>
-                      <div class="rate" data-rate="60"></div>
-                    </div>
-                  </li>
-                </ul>
+              <div class="charts">
+                <div class="chart">
+                  <div class="tit point">Photoshop</div>
+                    <h2 data-num="90">0</h2>
+                    <div class="bar"></div>
+                    <svg>
+                        <circle cx="110" cy="110"r="80"></circle>
+                    </svg>
+                </div>
+                <div class="chart">
+                  <div class="tit point">Illustration</div>
+                    <h2 data-num="90">0</h2>
+                    <div class="bar"></div>
+                    <svg>
+                        <circle cx="110" cy="110"r="80"></circle>
+                    </svg>
+                </div>
+                <div class="chart">
+                  <div class="tit point">After Efect</div>
+                    <h2 data-num="65">0</h2>
+                    <div class="bar"></div>
+                    <svg>
+                        <circle cx="110" cy="110"r="80"></circle>
+                    </svg>
+                </div>
+                <div class="chart">
+                  <div class="tit point">HTML</div>
+                    <h2 data-num="85">0</h2>
+                    <div class="bar"></div>
+                    <svg>
+                        <circle cx="110" cy="110"r="80"></circle>
+                    </svg>
+                </div>
+                <div class="chart">
+                  <div class="tit point">CSS</div>
+                    <h2 data-num="80">0</h2>
+                    <div class="bar"></div>
+                    <svg>
+                        <circle cx="110" cy="110"r="80"></circle>
+                    </svg>
+                </div>
+                <div class="chart">
+                  <div class="tit point">Javascript</div>
+                    <h2 data-num="70">0</h2>
+                    <div class="bar"></div>
+                    <svg>
+                        <circle cx="110" cy="110"r="80"></circle>
+                    </svg>
+                </div>
+                <div class="chart">
+                  <div class="tit point">jQuery</div>
+                    <h2 data-num="75">0</h2>
+                    <div class="bar"></div>
+                    <svg>
+                        <circle cx="110" cy="110"r="80"></circle>
+                    </svg>
+                </div>
+                <div class="chart">
+                  <div class="tit point">SCSS</div>
+                    <h2 data-num="60">0</h2>
+                    <div class="bar"></div>
+                    <svg>
+                        <circle cx="110" cy="110"r="80"></circle>
+                    </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -326,7 +327,9 @@
             </div>
           </div>
         </div>
-        <div id="contact" class="section"></div>
+        <div id="contact" class="section">
+          
+        </div>
       </main>
       <footer></footer>
     </div>
