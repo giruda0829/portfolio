@@ -1,4 +1,3 @@
-
 /* ---------- header ----------*/
 header {
     width: 100%;
@@ -20,6 +19,7 @@ header {
     float: left;
     margin-left: 50px;
 }
+
 #gnb .logo_area .logo {
     position: relative;
     display: flex;
@@ -34,7 +34,9 @@ header {
     user-select: none;
     z-index: 200;
 }
-.logo::after, .logo::before {
+
+.logo::after,
+.logo::before {
     position: absolute;
     top: 0;
     right: 0;
@@ -46,7 +48,8 @@ header {
 }
 
 .logo::before {
-    background-color: #c8d0ff;;
+    background-color: #c8d0ff;
+    ;
     transform: rotate(-30deg);
     z-index: -2;
     animation: rotate1 30s linear infinite;
@@ -63,6 +66,7 @@ header {
     from {
         transform: rotate(-30deg);
     }
+
     to {
         transform: rotate(330deg);
     }
@@ -72,6 +76,7 @@ header {
     from {
         transform: rotate(380deg);
     }
+
     to {
         transform: rotate(20deg);
     }
@@ -131,8 +136,9 @@ header {
     height: 650px;
     position: relative;
 }
-#main_visual::before{
-    background-image: url(https://res.cloudinary.com/giruda1113/image/upload/v1649753769/web%20portfolio/bg_uhcwrd.png);
+
+#main_visual::before {
+    /* background-image: url(https://res.cloudinary.com/giruda1113/image/upload/v1649753769/web%20portfolio/bg_uhcwrd.png); */
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,6 +150,52 @@ header {
     height: 801px;
     content: '';
     z-index: -100;
+}
+
+
+.ball_wrap {
+    width: 1340px;
+    height: 200px;
+    margin: 20px auto 0 auto;
+    position: relative;
+    top: -600px;
+}
+
+.ball {
+    position: absolute;
+    left: 70px;
+    top: 70px;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.4);
+    border-radius: 35px;
+}
+
+.ball {
+    offset: path("M0,100c10,-50 82.095,-82.507 127.089,0c19.734,-79.314 119.195,-102.241 151.559,0c5.526,-77.735 101.322,-104.262 149.192,-52.888") auto;
+    animation: moveto 4s ease infinite;
+}
+
+@keyframes moveto {
+    0% {
+        offset-distance: 0%;
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        offset-distance: 100%;
+        opacity: 0;
+    }
 }
 
 #main_visual .visual_wrap {
@@ -175,7 +227,8 @@ header {
     font-size: 40px;
     margin-top: 30px;
 }
-#main_visual .slogun p.tit .point{
+
+#main_visual .slogun p.tit .point {
     margin-left: 12px;
 }
 
@@ -188,30 +241,36 @@ header {
     width: 100%;
     display: block;
 }
+
 /* ---------- //header ----------*/
 
 /* ---------- main ----------*/
 /*---------- #its_me ----------*/
-.profile{
+.profile {
     padding-bottom: 80px;
 }
-.its_me_aera{
+
+.its_me_aera {
     width: 80%;
     margin: 50px auto;
     display: flex;
     justify-content: space-evenly;
 }
-.its_me_title{
+
+.its_me_title {
     width: 35%;
 }
-.its_me_img img{
+
+.its_me_img img {
     width: 90%;
 }
-.its_me_text{
+
+.its_me_text {
     width: 80%;
     font-family: 'GmarketSansLight';
 }
-.its_me_text>.tit{
+
+.its_me_text>.tit {
     width: 100%;
     margin-bottom: 12px;
     font-size: 22px;
@@ -219,26 +278,30 @@ header {
     padding: 12px 0;
     font-family: 'GmarketSansMedium';
 }
-.its_me_text>.tit .bold{
+
+.its_me_text>.tit .bold {
     font-family: 'GmarketSansBold';
 }
 
-.its_me_resume{
+.its_me_resume {
     width: 40%;
     font-weight: 800;
 }
-.its_me_resume ul{
+
+.its_me_resume ul {
     list-style-type: disc;
     margin-left: 15px;
     font-family: 'GmarketSansLight';
 }
-.resume_tit{
+
+.resume_tit {
     font-family: 'GmarketSansBold';
     margin-bottom: 12px;
     margin-top: 25px;
     font-size: 18px;
 }
-.resume_icon>ul{
+
+.resume_icon>ul {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -247,12 +310,14 @@ header {
     margin-left: 0;
     width: 300px;
 }
-.resume_icon>ul>li{
+
+.resume_icon>ul>li {
     width: 65px;
     height: 65px;
     margin: 5px;
 }
-.resume_icon>ul>li>span{
+
+.resume_icon>ul>li>span {
     width: 100%;
     height: 65px;
     line-height: 65px;
@@ -264,11 +329,13 @@ header {
     color: var(--primary-color);
     font-size: 18px;
 }
+
 /* //.profile */
-.skill{
+.skill {
     padding-bottom: 80px;
 }
-.charts{
+
+.charts {
     width: 100%;
     margin: 5rem auto;
     display: flex;
@@ -276,84 +343,103 @@ header {
     flex-wrap: wrap;
     align-items: center;
 }
-.charts .chart{
+
+.charts .chart {
     margin: 0 20px;
     position: relative;
 }
-.charts .chart h2{
+
+.charts .chart h2 {
     position: absolute;
     left: 50%;
     top: 57%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.charts .chart svg{
+
+.charts .chart svg {
     width: 220px;
     height: 220px;
 }
-circle{
+
+circle {
     fill: #ffffff;
     stroke-dasharray: 535;
     stroke-dashoffset: 535;
     stroke-width: 20;
     stroke: #1787ff;
     transform: rotate(-90deg);
-    transform-origin:50% 50%;
+    transform-origin: 50% 50%;
     stroke-linecap: round;
 }
-@keyframes line{
-    from{stroke-dashoffset: 628;}
-    to{stroke-dashoffset: 0;}
+
+@keyframes line {
+    from {
+        stroke-dashoffset: 628;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 .charts .chart:nth-child(2) circle,
-.charts .chart:nth-child(6) circle{
+.charts .chart:nth-child(6) circle {
     stroke: #ff9c23;
 }
+
 .charts .chart:nth-child(3) circle,
-.charts .chart:nth-child(7) circle{
+.charts .chart:nth-child(7) circle {
     stroke: #8914ff;
 }
+
 .charts .chart:nth-child(4) circle,
-.charts .chart:nth-child(8) circle{
+.charts .chart:nth-child(8) circle {
     stroke: #ff141c;
 }
-.charts .tit{
+
+.charts .tit {
     text-transform: none;
     font-size: 18px;
     font-family: 'GmarketSansMedium';
     text-align: center;
     margin-top: 15px;
 }
+
 /* //.skill */
 
 /*---------- #project ----------*/
 
-#project .project_wrap{
+#project .project_wrap {
     display: flex;
     justify-content: space-evenly;
     margin-top: 90px;
 }
-.mockup_area{
+
+.mockup_area {
     width: 45%;
 }
-#project .pc{
+
+#project .pc {
     width: 500px;
     height: 500px;
     position: relative;
 }
-#project .mobile{
+
+#project .mobile {
     width: 180px;
     height: 280px;
     position: relative;
     top: -350px;
     left: 385px;
 }
+
 #project .computer,
-#project .iphone{
+#project .iphone {
     width: 100%;
     position: absolute;
 }
-#project .pc a{
+
+#project .pc a {
     display: block;
     width: 470px;
     height: 264px;
@@ -362,7 +448,8 @@ circle{
     top: 15px;
     left: 15px;
 }
-#project .mobile a{
+
+#project .mobile a {
     display: block;
     width: 125px;
     height: 273px;
@@ -372,50 +459,86 @@ circle{
     left: 27px;
     border-radius: 14px;
 }
-#project .scroll img{
+
+#project .scroll img {
     width: 100%;
     position: relative;
 }
-.iphone_top{
+
+.iphone_top {
     width: 45%;
     position: absolute;
     top: 35px;
     left: 50px;
 }
 
-.text_area{
+.text_area {
     width: 40%;
     position: relative;
 }
-.project_num span.number{
+
+.project_num span.number {
     font-family: 'GmarketSansBold';
     opacity: .3;
     font-size: 32px;
     margin-bottom: 15px;
 }
-.project_tit .tit{
+
+.project_tit .tit {
     font-size: 32px;
     font-family: 'GmarketSansBold';
     margin-bottom: 15px;
 }
-.project_txt{
+
+.project_txt {
     font-size: 16px;
 }
-.project_txt span.categori{
+
+.project_txt span.categori {
     font-size: 20px;
     margin-top: 15px;
     text-transform: none;
     margin-top: 50px;
     opacity: .7;
 }
-.project_txt .bold{
+
+.project_txt .bold {
     font-family: 'GmarketSansBold';
 }
 
 /*---------- #design ----------*/
+.disign_wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.disign_wrap .disign {
+    width: calc(100%/3.5);
+    height: 250px;
+    border: 3px solid var(--primary-color);
+    border-radius: 15px;
+    margin: 20px;
+}
 
 /*---------- #contact ----------*/
-#contact{
-    background-color: var(--primary-color);
+#contact {
+    background-color: #4586ef;
 }
+
+#contact .tit {
+    width: 100%;
+    color: #4586ef;
+    font-size: 95px;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    text-align: center;
+}
+.contact_wrap{
+    width: 60%;
+    height: 450px;
+    background-color: #fff;
+}
+
 /* ---------- //main ----------*/

@@ -1,7 +1,7 @@
 $(function () {
   var charts = $(".charts");
   var chart = $(".chart");
-  var chartOST = chart.offset().top - 700;
+  var chartOST = chart.offset().top - 200;
   // var excuted = false;
   // console.log(excuted);
 

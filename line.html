@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>경로 애니메이션2</title>
+		<style>
+			.wrap {
+				background-color: #f0f0f0;
+				width: 600px;
+				height: 200px;
+			}
+
+			.box {
+				position: absolute;
+				left: 70px;
+				top: 70px;
+				width: 60px;
+				height: 60px;
+				background-color: #a00;
+				border: 5px solid pink;
+				box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.4);
+				border-radius: 35px;
+			}
+		</style>
+
+		<style>
+			.box {
+				offset: path("M0,100c10,-50 82.095,-82.507 127.089,0c19.734,-79.314 119.195,-102.241 151.559,0c5.526,-77.735 101.322,-104.262 149.192,-52.888") auto;
+				animation: moveto 4s ease infinite;
+			}
+			@keyframes moveto {
+				0% {
+					offset-distance: 0%;
+				}
+				100% {
+					offset-distance: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="box"></div>
+		</div>
+	</body>
+</html>
