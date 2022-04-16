@@ -36,6 +36,9 @@
     <meta name="twitter:image" content="shear_img_twt.jpg" />
 
     <title>전화연의 포트폴리오</title>
+
+    <!-- 폰트어썸 플러그인 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- 공통 css -->
     <link rel="stylesheet" href="css/reset.css" />
@@ -46,12 +49,21 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src='https://code.jquery.com/ui/1.13.0/jquery-ui.js'></script>
     <!-- js -->
+    <script src="js/bg_gradiant.js"></script>
     <!-- jQ -->
     <script src="jq/scroll.js"></script>
     <script src="jq/chart.js"></script>
+    <script src="jq/top_btn.js"></script>
   </head>
   <body>
-    <div id="skip_menu"></div>
+    <div id="container"></div>
+    <div id="skip-menu">
+      <a href="#its_me">프로필 바로가기</a>
+      <a href="#project">프로젝트 바로가기</a>
+      <a href="#design">디자인 바로가기</a>
+      <a href="#contact">컨택트 바로가기</a>
+      <a href="#">가장 위로가기</a>
+    </div>
     <div id="wrap">
       <header>
         <div id="gnb">
@@ -95,7 +107,7 @@
               <div class="slogun">
                 <p>
                   <span class="point">코딩</span>에
-                  <span class="point">헤딩</span>하는
+                  <span class="point margin">헤딩</span>하는
                 </p>
                 <p>패기넘치는 신입</p>
                 <p class="tit">
@@ -107,6 +119,14 @@
                   src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/me_hol1hy.png"
                   alt="프로필 사진"
                 />
+              </div>
+              <div class="btn">
+                <div class="git_btn">
+                  <a href="https://github.com/giruda0829/portfolio">깃허브 보기</a>
+                </div>
+                <div class="resume_btn">
+                  <a href="#">이력서 보기</a>
+                </div>
               </div>
             </div>
           </div>
@@ -271,10 +291,110 @@
               <ul>
                 <li class="project1">
                   <div class="project_wrap">
-                    <div class="mockup_area">
+                    <div class="mockup_area left">
                         <div class="pc">
                           <img
-                            src="images/project/computer.png"
+                            src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/computer_qm6jh4.png"
+                            alt="데스크탑 목업 이미지"
+                            class="computer"
+                          />
+                          <a href="https://giruda0829.github.io/project1/" title="첫 번째 프로젝트로 이동합니다." class="scroll">
+                            <img src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/web_atinev.png" alt="한국과학기술기획평가원 웹 화면" />
+                          </a>
+                        </div>
+                        <div class="mobile">
+                          <img
+                            src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/iPhone_X_2_xkb1j3.png"
+                            alt="모바일 목업 이미지"
+                            class="iphone"
+                          />
+                          <a href="https://giruda0829.github.io/project1/" title="첫 번째 프로젝트로 이동합니다." class="scroll">
+                            <img
+                              src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/mobile_q9smcg.png"
+                              alt="한국과학기술기획평가원 모바일 화면"
+                            />
+                          </a>
+                          <img src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/iPhone_X_2_top_jxi83j.png" alt="모바일 목업 이미지" class="iphone_top">
+                        </div>
+                    </div>
+                    <div class="text_area right">
+                      <div class="project_num">
+                        <span class="number point">project 01</span>
+                      </div>
+                      <div class="project_tit">
+                        <span class="tit point">한국과학기술기획평가원</span>
+                      </div>
+                      <div class="project_txt">
+                        <span>웹 디자인의 첫 프로젝트로 한국과학기술기획평가원의 홈페이지를 제작했습니다. 기존에 있던 로고를 리디자인하고 슬라이드와 탭 기능, 모달 팝업 기능까지 구현했습니다.</span>
+                        <span class="point categori">#관공서 #적응형 #다양한 기능 <br> HTML / CSS / Javascript / jQuery<span class="bold">제작기간 4주 </span></span>
+                      </div>
+                      <div class="btn">
+                        <div class="resume_btn">
+                          <a href="https://github.com/giruda0829/project1" title="프로젝트1 깃허브로 이동합니다.">깃허브 보기</a>
+                        </div>
+                        <div class="git_btn">
+                          <a href="https://giruda0829.github.io/project1/" title="프로젝트1 사이트로 이동합니다.">사이트 보기</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="project2">
+                  <div class="project_wrap">
+                    <div class="mockup_area left">
+                        <div class="pc">
+                          <img
+                            src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/computer_qm6jh4.png"
+                            alt="데스크탑 목업 이미지"
+                            class="computer"
+                          />
+                          <a href="https://giruda0829.github.io/project2/" title="두 번째 프로젝트로 이동합니다." class="scroll">
+                            <img src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/web_atinev.png" alt="제네시스 웹 화면" />
+                          </a>
+                        </div>
+                        <div class="mobile">
+                          <img
+                            src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/iPhone_X_2_xkb1j3.png"
+                            alt="모바일 목업 이미지"
+                            class="iphone"
+                          />
+                          <a href="https://giruda0829.github.io/project2/" title="두 번째 프로젝트로 이동합니다." class="scroll">
+                            <img
+                              src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/mobile_q9smcg.png"
+                              alt="제네시스 모바일 화면"
+                            />
+                          </a>
+                          <img src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/iPhone_X_2_top_jxi83j.png" alt="모바일 목업 이미지" class="iphone_top">
+                        </div>
+                    </div>
+                    <div class="text_area right">
+                      <div class="project_num">
+                        <span class="number point">project 02</span>
+                      </div>
+                      <div class="project_tit">
+                        <span class="tit point">제네시스 G70</span>
+                      </div>
+                      <div class="project_txt">
+                        <span>웹 디자인의 두 번째 프로젝트로 제네시스의 홈페이지를 제작했습니다. 세련된 디자인에 슬라이드와 필터 기능을 적용했고 반응형으로 제작된 사이트 입니다.</span>
+                        <span class="point categori">#기업 #반응형 #세련된디자인 <br> HTML / CSS / Javascript / jQuery<span class="bold">제작기간 2주 </span></span>
+                      </div>
+                      <div class="btn">
+                        <div class="resume_btn">
+                          <a href="https://github.com/giruda0829/project2" title="프로젝트2 깃허브로 이동합니다.">깃허브 보기</a>
+                        </div>
+                        <div class="git_btn">
+                          <a href="https://giruda0829.github.io/project2/" title="프로젝트2 사이트로 이동합니다.">사이트 보기</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="project3">
+                  <div class="project_wrap">
+                    <div class="mockup_area left">
+                        <div class="pc">
+                          <img
+                            src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/computer_qm6jh4.png"
                             alt="데스크탑 목업 이미지"
                             class="computer"
                           />
@@ -284,7 +404,7 @@
                         </div>
                         <div class="mobile">
                           <img
-                            src="images/project/iPhone X 2.png"
+                            src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/iPhone_X_2_xkb1j3.png"
                             alt="모바일 목업 이미지"
                             class="iphone"
                           />
@@ -294,33 +414,74 @@
                               alt="한국과학기술기획평가원 모바일 화면"
                             />
                           </a>
-                          <img src="images/project/iPhone X 2_top.png" alt="모바일 목업 이미지" class="iphone_top">
+                          <img src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/iPhone_X_2_top_jxi83j.png" alt="모바일 목업 이미지" class="iphone_top">
                         </div>
                     </div>
-                    <div class="text_area">
+                    <div class="text_area right">
                       <div class="project_num">
-                        <span class="number point">project 01</span>
+                        <span class="number point">project 03</span>
                       </div>
                       <div class="project_tit">
-                        <span class="tit point">한국과학기술기획평가원</span>
+                        <span class="tit point">사이퍼즈 이벤트 페이지</span>
                       </div>
                       <div class="project_txt">
-                        <span>웹 디자인의 첫 프로젝트로 한국과학기술기획평가원의 홈페이지를 제작했습니다. 기존에 있던 로고를 리디자인하고 슬라이드와 탭 기능, 모달 팝업 기능까지 구현했습니다.</span>
-                        <span class="point categori">#관공서 #적응형 #다양한 기능 <span class="bold">제작기간 4주 </span>HTML / CSS / Javascript / jQuery</span>
+                        <span>웹 디자인의 세 번째 프로젝트로 넥슨에 속해있는 게임회사 네오플의 게임. 사이퍼즈의 이벤트 페이지로 SCSS를 이용해 구현하여 코드를 보다 빠르고 깔끔하게 정돈해 제작하였습니다.</span>
+                        <span class="point categori">#이벤트 #게임 <br> HTML / SCSS / jQuery<span class="bold">제작기간 2일 </span></span>
                       </div>
-                      <div class="button">
-                        
+                      <div class="btn">
+                        <div class="resume_btn">
+                          <a href="https://github.com/giruda0829/project1" title="프로젝트3 깃허브로 이동합니다.">깃허브 보기</a>
+                        </div>
+                        <div class="git_btn">
+                          <a href="https://giruda0829.github.io/project1/" title="프로젝트3 사이트로 이동합니다.">사이트 보기</a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="project2"></li>
-                <li class="project3"></li>
               </ul>
             </div>
             <div class="uiux_project">
               <div class="section_tit">
                 <span class="sub_tit">ui/ux project</span>
+              </div>
+              <div class="project_wrap">
+                <div class="mockup_area left">
+                    <div class="mobile">
+                      <img
+                        src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/iPhone_X_2_xkb1j3.png"
+                        alt="모바일 목업 이미지"
+                        class="iphone"
+                      />
+                      <a href="https://giruda0829.github.io/project1/" title="라펫 프로젝트로 이동합니다." class="scroll">
+                        <img
+                          src="images/project/mobile.png"
+                          alt="어플리케이션 라펫 화면"
+                        />
+                      </a>
+                      <img src="https://res.cloudinary.com/giruda1113/image/upload/q_auto/web%20portfolio/iPhone_X_2_top_jxi83j.png" alt="모바일 목업 이미지" class="iphone_top">
+                    </div>
+                </div>
+                <div class="text_area right">
+                  <div class="project_num">
+                    <span class="number point">ui/ux project</span>
+                  </div>
+                  <div class="project_tit">
+                    <span class="tit point">유기동물 App "라펫"</span>
+                  </div>
+                  <div class="project_txt">
+                    <span>UI/UX 프로젝트로 유기동물을 보호하는 센터와 개인이 쉽게 만남을 가질 수 있는 창구가 되는 어플리케이션입니다. 이름은 라펫으로 길,동네라는 뜻의 라우라와 동물의 펫, 가족의 패밀리 라는 의미를 담고 있습니다.</span>
+                    <span class="point categori">#유기동물 #가족 #어플리케이션 <br> HTML / CSS / Javascript / jQuery<span class="bold">제작기간 1주 / 기여도 30% </span></span>
+                  </div>
+                  <div class="btn">
+                    <div class="resume_btn">
+                      <a href="https://github.com/giruda0829/project1" title="라펫 프로젝트 깃허브로 이동합니다.">깃허브 보기</a>
+                    </div>
+                    <div class="git_btn">
+                      <a href="https://giruda0829.github.io/project1/" title="라펫 프로젝트 이용 사이트로 이동합니다.">사이트 보기</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -328,26 +489,53 @@
             <div class="section_tit">
               <span class="tit">design</span>
             </div>
-            <div class="disign_wrap">
-              <div class="disign"></div>
-              <div class="disign"></div>
-              <div class="disign"></div>
-              <div class="disign"></div>
-              <div class="disign"></div>
-              <div class="disign"></div>
+            <div class="inner">
+              <div class="disign_wrap">
+                <div class="disign"></div>
+                <div class="disign"></div>
+                <div class="disign"></div>
+                <div class="disign"></div>
+                <div class="disign"></div>
+                <div class="disign"></div>
+              </div>
             </div>
           </div>
         </div>
         <div id="contact" class="section">
-          <div class="inner">
-            <div class="tit">Shall we meet Now?</div>
-            <div class="contact_wrap">
-              
+          <div class="contact_aera">
+            <div class="inner">
+              <div class="tit">Shall we meet Now?</div>
+              <div class="contact_wrap">
+                <div class="number"></div>
+                <div class="belief"></div>
+              </div>
             </div>
+          </div>
+          <div class="bg_wave">
+            <div id="water" class="water">
+              <svg viewBox="0 0 560 20" class="water__wave water__wave_back">
+                  <use xlink:href="#wave"></use>
+              </svg>
+              <svg viewBox="0 0 560 20" class="water__wave water__wave_front">
+                  <use xlink:href="#wave"></use>
+              </svg>
+            </div>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="display: none;">
+                <symbol id="wave">
+                    <path d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z"></path>
+                    <path d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z"></path>
+                    <path d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z"></path>
+                    <path d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z"></path>
+                </symbol>
+            </svg>
           </div>
         </div>
       </main>
       <footer></footer>
+    </div>
+    <div id="back-top-btn">
+      <a href="#wrap"><i class="fa-solid fa-caret-up"></i><br /><span>TOP</span></a
+      >
     </div>
   </body>
 </html>
