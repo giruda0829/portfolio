@@ -187,13 +187,6 @@ p {
 }
 
 /* ---------- main ----------*/
-.section {
-  width: 100%;
-  margin: 100px auto 0;
-  position: relative;
-  overflow: hidden;
-}
-
 .section_tit>.tit {
   font-family: 'GmarketSansBold';
   display: block;
