@@ -300,13 +300,13 @@ header {
 	0% {
 		top:0;
 	}
-	20%{
+	18%{
 		top:0;
 	}
-	30%{
-		top:13px;
+	23%{
+		top:-13px;
 	}
-	40%{
+	33%{
 		top:0;
 	}
 	100%{
@@ -322,13 +322,13 @@ header {
 	0% {
 		top:0;
 	}
-	40%{
+	38%{
 		top:0;
 	}
-	50%{
-		top:13px;
+	43%{
+		top:-13px;
 	}
-	60%{
+	53%{
 		top:0;
 	}
 	100%{
@@ -854,7 +854,7 @@ circle {
 .water__inner {
 	position: absolute;
 	width: 100%;
-	height: 50%;
+	height: 30%;
 	top: 0;
 	left: 0;
 	overflow: hidden;
@@ -870,14 +870,14 @@ circle {
 .water__wave_back {
 	right: 0;
 	fill: #114aa5;
-	animation: wave-back 4.4s infinite linear;
+	animation: wave-back 6.4s infinite linear;
 }
 
 .water__wave_front {
 	left: 0;
 	fill: #4586ef;
 	margin-bottom: -1px;
-	animation: wave-front 3.7s infinite linear;
+	animation: wave-front 5.7s infinite linear;
 
 }
 
@@ -936,7 +936,7 @@ circle {
 	width: 100%;
 	color: #fff;
 	text-align: center;
-	height: 74px;
+	height: 50px;
 	font-size: 35px;
 	overflow: hidden;
 	z-index: 20;
