@@ -1,6 +1,6 @@
 $(function(){
 const topmenu = $("#gnb nav ul.header_manu li");
-const sections = $("main .section");
+const sections = $(".section");
 const speed = 500;
 topmenu.click(function (e) {
   e.preventDefault();

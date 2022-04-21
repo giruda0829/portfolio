@@ -1,32 +1,3 @@
-/* ---------- 배경 그라디언트 ----------*/
-body {
-	--hue1: 176;
-	--hue2: 341;
-	--hue3: 250;
-	--hue4: 90;
-}
-
-#container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 700px;
-	opacity: .4;
-	background: radial-gradient(circle at top left,
-			hsla(var(--hue1), 90%, 80%, 0.5),
-			transparent 75%),
-		radial-gradient(circle at top right,
-			hsla(var(--hue2), 90%, 80%, 0.5),
-			transparent 75%),
-		radial-gradient(at bottom left,
-			hsla(var(--hue3), 90%, 80%, 0.5),
-			transparent 75%),
-		radial-gradient(at bottom right,
-			hsla(var(--hue4), 90%, 80%, 0.5),
-			transparent 75%);
-}
-
 /* ---------- header ----------*/
 header {
 	width: 100%;
@@ -225,7 +196,7 @@ header {
 	top: 70px;
 	width: 70px;
 	height: 70px;
-	background:url(https://res.cloudinary.com/giruda1113/image/upload/v1650358230/web%20portfolio/soccer-ball-variant_pjmvvq.png) no-repeat center center/cover;
+	background: url(https://res.cloudinary.com/giruda1113/image/upload/v1650358230/web%20portfolio/soccer-ball-variant_pjmvvq.png) no-repeat center center/cover;
 	box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.4);
 	border-radius: 35px;
 	overflow: hidden;
@@ -291,56 +262,70 @@ header {
 	margin-top: 30px;
 }
 
-#main_visual .slogun p .point .animate1{
+#main_visual .slogun p .point .animate1 {
 	position: relative;
 	top: 0;
 	animation: moveanimate1 4s ease infinite forwards;
 }
+
 @keyframes moveanimate1 {
 	0% {
-		top:0;
+		top: 0;
 	}
-	18%{
-		top:0;
+
+	18% {
+		top: 0;
 	}
-	23%{
-		top:-13px;
+
+	23% {
+		top: -13px;
 	}
-	33%{
-		top:0;
+
+	33% {
+		top: 0;
 	}
-	100%{
-		top:0;
+
+	100% {
+		top: 0;
 	}
 }
-#main_visual .slogun p .point .animate2{
+
+#main_visual .slogun p .point .animate2 {
 	position: relative;
 	top: 0;
 	animation: moveanimate2 4s ease infinite forwards;
 }
+
 @keyframes moveanimate2 {
 	0% {
-		top:0;
+		top: 0;
 	}
-	38%{
-		top:0;
+
+	38% {
+		top: 0;
 	}
-	43%{
-		top:-13px;
+
+	43% {
+		top: -13px;
 	}
-	53%{
-		top:0;
+
+	53% {
+		top: 0;
 	}
-	100%{
-		top:0;
+
+	100% {
+		top: 0;
 	}
 }
-#main_visual .slogun p .point{
+
+#main_visual .slogun p .point {
 	display: flex;
 }
+
 #main_visual .slogun p.tit .point {
 	margin-left: 12px;
 }
+
 
 #main_visual .image {
 	width: 40%;
@@ -361,12 +346,13 @@ header {
 
 /* ---------- main ----------*/
 /*---------- #its_me ----------*/
-#its_me{
+#its_me {
 	width: 100%;
-  margin: 100px auto 0;
-  position: relative;
-  overflow: hidden;
+	margin: 100px auto 0;
+	position: relative;
+	overflow: hidden;
 }
+
 .profile {
 	padding-bottom: 80px;
 }
@@ -533,12 +519,13 @@ circle {
 
 /*---------- #project ----------*/
 
-#project{
+#project {
 	width: 100%;
-  margin: 100px auto 0;
-  position: relative;
-  overflow: hidden;
+	margin: 100px auto 0;
+	position: relative;
+	overflow: hidden;
 }
+
 #project .project_wrap {
 	display: flex;
 	justify-content: space-evenly;
@@ -711,6 +698,7 @@ circle {
 #design {
 	margin-bottom: 250px;
 	width: 100%;
+	min-height: 600px;
 	margin: 100px auto 0;
 	position: relative;
 	overflow: hidden;
@@ -797,35 +785,107 @@ circle {
 /*---------- #contact ----------*/
 #contact {
 	width: 100%;
+	height: 100vh;
 	margin: 100px auto 0;
 	position: relative;
 	overflow: hidden;
+	background-color: #4586ef;
 }
 
 #contact .contact_aera {
 	z-index: 10;
 	position: relative;
-	margin-top: 180px;
-	background-color: #4586ef;
-	padding-bottom: 80px;
+	padding-top: 9%;
 }
 
-#contact .tit {
+.contact_aera .tit {
 	width: 100%;
 	color: #4586ef;
-	font-size: 95px;
+	font-size: 75px;
 	text-shadow: -1px -1px 3px #ffffff85, 1px -1px 3px #ffffff85, -1px 1px 3px #ffffff85, 1px 1px 3px #ffffff85;
 	text-align: center;
-	margin-bottom: 35px;
+	margin-bottom: 50px;
 }
 
 .contact_wrap {
 	width: 75%;
-	height: 350px;
+	height: 300px;
 	background-color: #fff;
 	border-radius: 300px;
 	margin: 0 auto;
 	box-shadow: 0px 0px 20px #18256e50;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.contact_wrap .number {
+	width: 45%;
+	border-right: 1px solid var(--primary-color);
+	height: 250px;
+	padding-left: 10%;
+	padding-top: 5%;
+}
+
+.contact_wrap .belief {
+	width: 55%;
+	font-family: 'GmarketSansLight';
+	padding-left: 7%;
+	padding-top: 2%;
+	height: 250px;
+	position: relative;
+}
+
+.contact_wrap .belief .btn {
+	bottom: 30px;
+}
+
+.contact_wrap .belief .bold {
+	color: var(--primary-color);
+	animation: color 3s ease-in infinite;
+}
+
+@keyframes color {
+	0% {
+		color: var(--primary-color);
+	}
+
+	40% {
+		color: var(--secondary-color);
+	}
+
+	70% {
+		color: var(--secondary-color);
+	}
+
+	100% {
+		color: var(--primary-color);
+	}
+}
+
+.contact_wrap .number span {
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.contact_wrap .number span.margin_bot {
+	margin-bottom: 30px;
+	margin-left: 50px;
+}
+
+.contact_wrap .number .fa-solid {
+	margin-right: 10%;
+	font-size: 22px;
+}
+
+.contact_wrap .belief span {
+	font-size: 22px;
+}
+
+.contact_wrap .number .point span,
+.contact_wrap .belief .point span {
+	color: var(--text-color);
+	text-transform: none;
 }
 
 .bg_wave {
@@ -894,104 +954,6 @@ circle {
 	}
 }
 
-@keyframes button-shadow {
-	0% {
-		opacity: 1;
-		transform: scale(1);
-	}
-
-	100% {
-		opacity: 0;
-		transform: scale(1.6);
-	}
-}
-
-@keyframes bubble-1 {
-	0% {
-		opacity: 1;
-		transform: scale(0) translate(0, 0);
-	}
-
-	25% {
-		transform: scale(0.25) translate(20px, -25px);
-	}
-
-	50% {
-		transform: scale(0.5) translate(40px, -50px);
-	}
-
-	75% {
-		transform: scale(0.75) translate(20px, -75px);
-	}
-
-	100% {
-		transform: scale(1) translate(10px, -100px);
-	}
-}
-
-.tracker {
-	position: absolute;
-	top: 10%;
-	left: 0;
-	width: 100%;
-	color: #fff;
-	text-align: center;
-	height: 50px;
-	font-size: 35px;
-	overflow: hidden;
-	z-index: 20;
-}
-
-.titleP {
-	font-size: 60px;
-	font-weight: 600;
-}
-
-@keyframes bubble-2 {
-	0% {
-		opacity: 1;
-		transform: scale(0) translate(-20px, -10px);
-	}
-
-	25% {
-		transform: scale(0.25) translate(-40px, -45px);
-	}
-
-	50% {
-		transform: scale(0.5) translate(-60px, -70px);
-	}
-
-	75% {
-		transform: scale(0.75) translate(-40px, -95px);
-	}
-
-	100% {
-		transform: scale(1) translate(-30px, -100px);
-	}
-}
-
-@keyframes bubble-3 {
-	0% {
-		opacity: 1;
-		transform: scale(0) translate(0, 0);
-	}
-
-	25% {
-		transform: scale(0.25) translate(0, -20px);
-	}
-
-	50% {
-		transform: scale(0.5) translate(-10px, -40px);
-	}
-
-	75% {
-		transform: scale(0.75) translate(10px, -60px);
-	}
-
-	100% {
-		transform: scale(1) translate(0, -100px);
-	}
-}
 
 /* ---------- //main ----------*/
 /* ---------- footer ---------- */
