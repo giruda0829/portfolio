@@ -660,18 +660,18 @@ circle {
 }
 
 /* uiux_project */
-#project .uiux_project .mockup_area {
+#project .uiux_project .project_wrap:last-child .mockup_area {
 	position: relative;
 }
 
-#project .uiux_project .mobile {
+#project .uiux_project .project_wrap:last-child .mobile {
 	width: 284px;
 	height: 280px;
 	top: -69px;
 	left: 124px;
 }
 
-#project .uiux_project .mobile a {
+#project .uiux_project .project_wrap:last-child .mobile a {
 	width: 198px;
 	height: 429px;
 	top: 56px;
@@ -679,7 +679,7 @@ circle {
 	border-radius: 19px;
 }
 
-#project .uiux_project .iphone_top {
+#project .uiux_project .project_wrap:last-child .iphone_top {
 	top: 56px;
 }
 
