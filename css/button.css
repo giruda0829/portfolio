@@ -1,0 +1,75 @@
+
+.btn {
+    position: absolute;
+    display: flex;
+    width: 310px;
+    justify-content: space-between;
+    align-items: center;
+  }
+.btn a {
+    padding: 15px 20px;
+    display: block;
+    width: 150px;
+    position: relative;
+    border-radius: 50px;
+    color: var(--bg-color);
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0px 0px 10px #18256e50;
+    overflow: hidden;
+    transition: all .5s;
+  }
+
+.btn a:hover .wave {
+    top: -120px;
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 15px;
+}
+
+.btn .wave {
+    width: 200px;
+    height: 200px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: -80px;
+    transition: 0.4s;
+}
+
+.btn .wave::before,
+.btn .wave::after {
+    width: 200%;
+    height: 200%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.btn .wave::before {
+    border-radius: 45%;
+    background-color: #002455;
+    animation: wave 5s linear infinite;
+}
+
+.btn .wave::after {
+    border-radius: 40%;
+    background-color: #001c4f80;
+    animation: wave 10s linear infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}

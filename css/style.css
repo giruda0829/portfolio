@@ -687,7 +687,6 @@ circle {
 	top: 65%;
 	left: 0;
 	transform: translateY(-65%);
-	width: 280px;
 }
 
 #project .btn a {
@@ -785,17 +784,17 @@ circle {
 /*---------- #contact ----------*/
 #contact {
 	width: 100%;
-	height: 100vh;
+	height: 90vh;
 	margin: 100px auto 0;
 	position: relative;
-	overflow: hidden;
-	background-color: #4586ef;
+	/* overflow: hidden; */
+	background: #4586ef;
 }
 
 #contact .contact_aera {
 	z-index: 10;
 	position: relative;
-	padding-top: 9%;
+	padding-top: 5%;
 }
 
 .contact_aera .tit {
@@ -886,72 +885,6 @@ circle {
 .contact_wrap .belief .point span {
 	color: var(--text-color);
 	text-transform: none;
-}
-
-.bg_wave {
-	width: 2000px;
-	height: 800px;
-	position: absolute;
-	margin: 0 auto;
-	overflow: hidden;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.water {
-	position: absolute;
-	height: 650px;
-	width: 100%;
-	z-index: 1;
-	top: -170px;
-	bottom: 0;
-	left: 0;
-	background: #4586ef;
-	transform: translate(0, 50%);
-}
-
-.water__inner {
-	position: absolute;
-	width: 100%;
-	height: 30%;
-	top: 0;
-	left: 0;
-	overflow: hidden;
-}
-
-.water__wave {
-	width: 200%;
-	position: absolute;
-	bottom: 100%;
-}
-
-
-.water__wave_back {
-	right: 0;
-	fill: #114aa5;
-	animation: wave-back 6.4s infinite linear;
-}
-
-.water__wave_front {
-	left: 0;
-	fill: #4586ef;
-	margin-bottom: -1px;
-	animation: wave-front 5.7s infinite linear;
-
-}
-
-
-@keyframes wave-front {
-	100% {
-		transform: translate(-50%, 0);
-	}
-}
-
-@keyframes wave-back {
-	100% {
-		transform: translate(50%, 0);
-	}
 }
 
 
