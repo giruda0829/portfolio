@@ -3,8 +3,11 @@
     position: absolute;
     display: flex;
     width: 310px;
+    height: 130px;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
   }
 .btn a {
     padding: 15px 20px;

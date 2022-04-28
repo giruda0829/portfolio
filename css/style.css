@@ -709,7 +709,6 @@ circle {
 	min-height: 600px;
 	margin: 100px auto 0;
 	position: relative;
-	overflow: hidden;
 }
 
 .design_wrap {
@@ -789,6 +788,70 @@ circle {
 .design_wrap .hover_text>.icon {
 	font-size: 22px;
 }
+.all_scrollFixed{overflow: hidden;}
+.all_scrollFixed::before {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateX(-50%);
+    content: '';
+    z-index: 9999;
+}
+#design .view{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	overflow: hidden;
+}
+#design .view.on{
+	display: block;
+}
+#design .view .container {
+	width: 70%;
+	height: 90%;
+	position: relative;
+	overflow: hidden;
+	margin: 30px auto;
+}
+#design .view .container .bar_area {
+	width: 100%;
+	height: 35px;
+	background: var(--primary-color);
+}
+#design .view .container .close_btn {
+	width: 35px;
+	height: 35px;
+	background: var(--primary-color);
+	position: relative;
+	float: right;
+}
+#design .view .container .fa-xmark {
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	font-size: 24px;
+	cursor: pointer;
+	color: var(--bg-color);
+}
+#design .view .container .content_area {
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+#design .view .container .content_area * {
+	width: 100%;
+	margin: -3px auto;
+}
+
 
 /*---------- #contact ----------*/
 #contact {
@@ -842,10 +905,6 @@ circle {
 	padding-top: 2%;
 	height: 250px;
 	position: relative;
-}
-
-.contact_wrap .belief .btn {
-	bottom: 30px;
 }
 
 .contact_wrap .belief .bold {

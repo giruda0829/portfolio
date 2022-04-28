@@ -2,8 +2,6 @@ $(function () {
   var charts = $(".charts");
   var chart = $(".chart");
   var chartOST = chart.offset().top - 200;
-  // var excuted = false;
-  // console.log(excuted);
 
   $(window).scroll(function () {
     var currentSCT = $(this).scrollTop();
@@ -36,6 +34,6 @@ $(function () {
           },
         }
       );
-    }); //chart each
+    });
   }
 });
