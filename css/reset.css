@@ -199,21 +199,3 @@ p {
   width: 100%;
   color: var(--primary-color);
 }
-
-.bubles{
-  position: relative;
-}
-.buble{
-  position: absolute;
-}
-.buble1{
-  width: 400px;
-    height: 400px;
-    background: #2158fc45;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    animation-name: blobby2;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
