@@ -665,22 +665,31 @@ circle {
 }
 
 #project .uiux_project .project_wrap:last-child .mobile {
-	width: 284px;
-	height: 280px;
+	width: 343px;
+	height: 597px;
 	top: -69px;
 	left: 124px;
 }
 
-#project .uiux_project .project_wrap:last-child .mobile a {
-	width: 198px;
-	height: 429px;
-	top: 56px;
-	left: 43px;
-	border-radius: 19px;
+#project .uiux_project .project_wrap:last-child .mobile .scroll {
+	position: relative;
+    width: 240px;
+    height: 519px;
+    top: 67px;
+    left: 53px;
+    border-radius: 23px;
+    overflow: hidden;
+}
+#project .uiux_project iframe {
+	position: absolute;
+	width: 100%;
+	height: 567px;
+	top: 0;
+	left: 0;
 }
 
 #project .uiux_project .project_wrap:last-child .iphone_top {
-	top: 56px;
+	top: 67px;
 }
 
 #project .btn {
