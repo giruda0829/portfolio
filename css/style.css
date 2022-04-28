@@ -340,6 +340,7 @@ header {
 #main_visual .btn {
 	bottom: 35px;
 	left: 221px;
+	align-items: flex-end;
 }
 
 /* ---------- //header ----------*/
