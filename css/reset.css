@@ -179,6 +179,10 @@ p {
 }
 
 /* ---------- main ----------*/
+.section_tit{
+  margin-top: 250px;
+  margin-bottom: 100px;
+}
 .section_tit>.tit {
   font-family: 'GmarketSansBold';
   display: block;

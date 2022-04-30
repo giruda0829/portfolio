@@ -187,7 +187,7 @@ header {
 	height: 200px;
 	margin: 20px auto 0 auto;
 	position: relative;
-	top: -590px;
+	top: -670px;
 }
 
 .ball {
@@ -232,7 +232,7 @@ header {
 	max-width: 1400px;
 	margin-top: 100px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	position: relative;
 }
@@ -240,7 +240,8 @@ header {
 #main_visual .slogun {
 	width: 40%;
 	position: relative;
-	left: 93px;
+	left: 10px;
+	top: -50px;
 }
 
 #main_visual .slogun .margin {
@@ -328,7 +329,7 @@ header {
 
 
 #main_visual .image {
-	width: 40%;
+	width: 35%;
 	margin-right: 50px;
 }
 
@@ -338,7 +339,7 @@ header {
 }
 
 #main_visual .btn {
-	bottom: 35px;
+	bottom: 80px;
 	left: 221px;
 	align-items: flex-end;
 }
@@ -349,7 +350,7 @@ header {
 /*---------- #its_me ----------*/
 #its_me {
 	width: 100%;
-	margin: 100px auto 0;
+	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
 }
@@ -360,7 +361,7 @@ header {
 
 .its_me_aera {
 	width: 80%;
-	margin: 50px auto;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-evenly;
 }
@@ -369,8 +370,12 @@ header {
 	width: 35%;
 }
 
+.its_me_img{
+	height: 350px;
+	overflow: hidden;
+}
 .its_me_img img {
-	width: 90%;
+	width: 75%;
 }
 
 .its_me_text {
@@ -446,7 +451,7 @@ header {
 
 .charts {
 	width: 100%;
-	margin: 5rem auto;
+	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -522,7 +527,7 @@ circle {
 
 #project {
 	width: 100%;
-	margin: 100px auto 0;
+	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
 }
@@ -530,7 +535,7 @@ circle {
 #project .project_wrap {
 	display: flex;
 	justify-content: space-evenly;
-	margin-top: 90px;
+	margin: 0 0 200px;
 	height: 600px;
 }
 
@@ -661,15 +666,31 @@ circle {
 }
 
 /* uiux_project */
+#project .uiux_project .project_wrap:last-child{
+	position: relative;
+	left: 50px;
+}
 #project .uiux_project .project_wrap:last-child .mockup_area {
 	position: relative;
+	display: flex;
+	align-items: baseline;
+	justify-content: flex-start;
+	width: 700px;
+	top: -100px;
 }
 
 #project .uiux_project .project_wrap:last-child .mobile {
 	width: 343px;
 	height: 597px;
-	top: -69px;
-	left: 124px;
+	top: -30px;
+	left: 50px;
+	position: relative;
+}
+#project .uiux_project .project_wrap:last-child .mobile:last-child {
+	width: 343px;
+	height: 597px;
+	top:0;
+	left: -70px;
 }
 
 #project .uiux_project .project_wrap:last-child .mobile .scroll {
@@ -691,6 +712,9 @@ circle {
 
 #project .uiux_project .project_wrap:last-child .iphone_top {
 	top: 67px;
+}
+#project .uiux_project .gif{
+	width: 230px;
 }
 
 #project .btn {
@@ -717,7 +741,6 @@ circle {
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	width: 100%;
-	margin-top: 50px;
 }
 
 .design_wrap .design {
