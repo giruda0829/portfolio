@@ -19,7 +19,6 @@ header {
 
 #gnb.active {
 	height: 55px;
-	/* From https://css.glass */
 	background: rgba(255, 255, 255, .7);
 	backdrop-filter: blur(6.4px);
 	-webkit-backdrop-filter: blur(6.4px);
@@ -179,52 +178,6 @@ header {
 	height: 650px;
 	position: relative;
 	top: 20px;
-}
-
-
-.ball_wrap {
-	width: 1340px;
-	height: 200px;
-	margin: 20px auto 0 auto;
-	position: relative;
-	top: -670px;
-}
-
-.ball {
-	position: absolute;
-	left: 80px;
-	top: 70px;
-	width: 70px;
-	height: 70px;
-	background: url(https://res.cloudinary.com/giruda1113/image/upload/v1650358230/web%20portfolio/soccer-ball-variant_pjmvvq.png) no-repeat center center/cover;
-	box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.4);
-	border-radius: 35px;
-	overflow: hidden;
-}
-
-.ball {
-	offset: path("M0,100c10,-50, 82.095,-82.507, 127.089,0c19.734,-79.314, 119.195,-102.241 151.559,0c5.526,-77.735 ,101.322,-104.262,149.192,-52.888") auto;
-	animation: moveto 4s ease infinite forwards;
-}
-
-@keyframes moveto {
-	0% {
-		offset-distance: 0%;
-		opacity: 0;
-	}
-
-	20% {
-		opacity: 1;
-	}
-
-	80% {
-		opacity: 1;
-	}
-
-	100% {
-		offset-distance: 100%;
-		opacity: 0;
-	}
 }
 
 #main_visual .visual_wrap {
@@ -564,7 +517,7 @@ circle {
 #project .project_wrap .right .project_num span {
 	transform-style: preserve-3d;
 	transform: rotateX(180deg);
-	transform-origin: 50% 100% 100%;
+	transform-origin: 50% 100%;
 	opacity: 0;
 	transition: all 2s 0.3s ease-in-out;
 	color: #dcedff;
@@ -875,12 +828,14 @@ circle {
 	width: 100%;
 	margin: -3px auto;
 }
+/* ---------- //main ----------*/
 
 
+/* ---------- footer ---------- */
 /*---------- #contact ----------*/
 #contact {
 	width: 100%;
-	height: 90vh;
+	height: 80vh;
 	margin: 100px auto 0;
 	position: relative;
 	/* overflow: hidden; */
@@ -978,10 +933,16 @@ circle {
 	color: var(--text-color);
 	text-transform: none;
 }
-
-
-/* ---------- //main ----------*/
-/* ---------- footer ---------- */
-
+#validator{
+	width: 100%;
+	padding: 10px 5%;
+	margin: 0 auto;
+	background-color: #3061af;
+}
+#validator .inner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 /* ---------- //footer ---------- */

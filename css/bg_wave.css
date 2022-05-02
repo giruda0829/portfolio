@@ -26,3 +26,48 @@
 .wave2 {
     background: url('https://res.cloudinary.com/giruda1113/image/upload/v1650625111/web%20portfolio/wave2_mjgidg.png') 0 0 repeat-x;
 }
+
+.ball_wrap {
+	width: 1340px;
+	height: 200px;
+	margin: 20px auto 0 auto;
+	position: relative;
+	top: -670px;
+}
+
+.ball {
+	position: absolute;
+	left: 80px;
+	top: 70px;
+	width: 70px;
+	height: 70px;
+	background: url(https://res.cloudinary.com/giruda1113/image/upload/v1650358230/web%20portfolio/soccer-ball-variant_pjmvvq.png) no-repeat center center/cover;
+	box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.4);
+	border-radius: 35px;
+	overflow: hidden;
+}
+
+.ball {
+	offset: path("M0,100c10,-50, 82.095,-82.507, 127.089,0c19.734,-79.314, 119.195,-102.241 151.559,0c5.526,-77.735 ,101.322,-104.262,149.192,-52.888") auto;
+	animation: moveto 4s ease infinite forwards;
+}
+
+@keyframes moveto {
+	0% {
+		offset-distance: 0%;
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	80% {
+		opacity: 1;
+	}
+
+	100% {
+		offset-distance: 100%;
+		opacity: 0;
+	}
+}
