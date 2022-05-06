@@ -25,9 +25,9 @@ header {
 }
 
 #gnb.active .logo_area .logo {
-	width: 3rem;
-	height: 3rem;
-	font-size: calc(3.5rem * 0.65);
+	width: 2.5rem;
+	height: 2.5rem;
+	font-size: 25px;
 	top: -8px;
 }
 
@@ -42,10 +42,10 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	width: 4rem;
-	height: 4rem;
+	width: 3.5rem;
+	height: 3.5rem;
 	color: var(--primary-color);
-	font-size: calc(5rem * 0.65);
+	font-size: 48px;
 	font-weight: bold;
 	font-family: "Montserrat", sans-serif;
 	user-select: none;
@@ -136,7 +136,7 @@ header {
 	position: relative;
 	color: var(--text-color);
 	line-height: 65px;
-	font-size: 14px;
+	font-size: 16px;
 	transition: all 0.4s ease-out;
 }
 
@@ -185,7 +185,7 @@ header {
 	max-width: 1400px;
 	margin-top: 100px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	position: relative;
 }
@@ -203,7 +203,7 @@ header {
 
 #main_visual .slogun p {
 	display: flex;
-	font-size: 35px;
+	font-size: 45px;
 	color: var(--text-color);
 }
 
@@ -212,7 +212,7 @@ header {
 }
 
 #main_visual .slogun p.tit {
-	font-size: 42px;
+	font-size: 45px;
 	margin-top: 30px;
 }
 
@@ -282,8 +282,7 @@ header {
 
 
 #main_visual .image {
-	width: 35%;
-	margin-right: 50px;
+	width: 40%;
 }
 
 #main_visual .image>img {
@@ -292,8 +291,8 @@ header {
 }
 
 #main_visual .btn {
-	bottom: 80px;
-	left: 221px;
+	bottom: 100px;
+	left: 155px;
 	align-items: flex-end;
 }
 
@@ -313,7 +312,7 @@ header {
 }
 
 .its_me_aera {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-evenly;
@@ -339,7 +338,7 @@ header {
 .its_me_text>.tit {
 	width: 100%;
 	margin-bottom: 12px;
-	font-size: 22px;
+	font-size: 27px;
 	border-bottom: 1px solid #333;
 	padding: 12px 0;
 	font-family: "GmarketSansMedium";
@@ -350,8 +349,17 @@ header {
 }
 
 .its_me_resume {
-	width: 40%;
+	width: 75%;
 	font-weight: 800;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	background-color: #1787ff10;
+	border-radius: 20px;
+}
+.its_me_resume>div{
+	width: 43%;
 }
 
 .its_me_resume ul {
@@ -363,8 +371,8 @@ header {
 .resume_tit {
 	font-family: "GmarketSansBold";
 	margin-bottom: 12px;
-	margin-top: 25px;
-	font-size: 18px;
+	margin-top: 30px;
+	font-size: 22px;
 }
 
 .resume_icon>ul {
@@ -393,7 +401,7 @@ header {
 	font-size: 18px;
 	border-radius: 10px;
 	background: linear-gradient(145deg, #dee7fe, #ffffff);
-	box-shadow: 5px 5px 7px #d4d4d4, -5px -5px 7px #ffffff;
+	box-shadow: 5px 5px 7px #acbdd2, -5px -5px 7px #ffffff;
 }
 
 /* //.profile */
@@ -583,7 +591,7 @@ circle {
 }
 
 .text_area {
-	width: 40%;
+	width: 43%;
 	position: relative;
 }
 
@@ -594,7 +602,7 @@ circle {
 }
 
 .project_tit .tit {
-	font-size: 32px;
+	font-size: 35px;
 	font-family: "GmarketSansBold";
 	margin-bottom: 15px;
 	/* background-clip: text;
@@ -603,11 +611,11 @@ circle {
 }
 
 .project_txt {
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .project_txt span.categori {
-	font-size: 20px;
+	font-size: 18px;
 	margin-top: 15px;
 	text-transform: none;
 	margin-top: 50px;
@@ -697,9 +705,9 @@ circle {
 }
 
 .design_wrap .design {
-	width: calc(100% / 4.2);
-	height: 200px;
-	margin: 5px;
+	width: calc(100% / 2.2);
+	height: 300px;
+	margin: 20px;
 	overflow: hidden;
 	position: relative;
 	top: 0;
@@ -713,11 +721,10 @@ circle {
 
 .design_wrap .image {
 	width: 100%;
-	height: 100%;
 }
 
 .design_wrap .image>img {
-	width: 120%;
+	width: 100%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -727,10 +734,10 @@ circle {
 
 .design_wrap .hover_text {
 	position: absolute;
-	top: -10px;
-	left: -10px;
-	bottom: -10px;
-	right: -10px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 	color: var(--bg-color);
 	background-color: #00000099;
 	opacity: 0;
@@ -742,7 +749,7 @@ circle {
 }
 
 .design:hover .image>img {
-	width: 150%;
+	width: 130%;
 }
 
 .design_wrap .hover_text>.year,
@@ -750,20 +757,20 @@ circle {
 .design_wrap .hover_text>.icon {
 	position: relative;
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 .design_wrap .hover_text>.year {
-	font-size: 14px;
+	font-size: 20px;
 	margin-top: 60px;
 }
 
 .design_wrap .hover_text>.title {
-	font-size: 18px;
+	font-size: 22px;
 }
 
 .design_wrap .hover_text>.icon {
-	font-size: 22px;
+	font-size: 24px;
 }
 .all_scrollFixed{overflow: hidden;}
 .all_scrollFixed::before {
@@ -792,7 +799,7 @@ circle {
 	display: block;
 }
 #design .view .container {
-	width: 70%;
+	width: 75%;
 	height: 90%;
 	position: relative;
 	overflow: hidden;
@@ -824,9 +831,9 @@ circle {
 	height: 100%;
 	overflow-y: auto;
 }
-#design .view .container .content_area * {
+#design .view .container .content_area>* {
 	width: 100%;
-	margin: -3px auto;
+	margin: -4px auto;
 }
 /* ---------- //main ----------*/
 
@@ -836,7 +843,7 @@ circle {
 #contact {
 	width: 100%;
 	height: 80vh;
-	margin: 100px auto 0;
+	margin: 250px auto 0;
 	position: relative;
 	/* overflow: hidden; */
 	background: #4586ef;
