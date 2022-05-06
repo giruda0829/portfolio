@@ -353,13 +353,14 @@ header {
 	font-weight: 800;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	background-color: #1787ff10;
 	border-radius: 20px;
 }
 .its_me_resume>div{
 	width: 43%;
+	margin-top: 50px;
 }
 
 .its_me_resume ul {
@@ -495,7 +496,7 @@ circle {
 
 #project .project_wrap {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	margin: 0 0 200px;
 	height: 600px;
 }
@@ -537,16 +538,16 @@ circle {
 }
 
 #project .pc {
-	width: 500px;
-	height: 500px;
+	width: 600px;
+	height: 600px;
 	position: relative;
 }
 
 #project .mobile {
-	width: 180px;
-	height: 280px;
+	width: 200px;
+	height: 300px;
 	position: relative;
-	top: -350px;
+	top: -400px;
 	left: 385px;
 }
 
@@ -558,23 +559,23 @@ circle {
 
 #project .pc a {
 	display: block;
-	width: 470px;
-	height: 264px;
-	position: absolute;
-	overflow: hidden;
-	top: 15px;
-	left: 15px;
+    width: 564px;
+    height: 317px;
+    position: absolute;
+    overflow: hidden;
+    top: 17px;
+    left: 17px;
 }
 
 #project .mobile a {
 	display: block;
-	width: 125px;
-	height: 273px;
-	position: absolute;
-	overflow: hidden;
-	top: 35px;
-	left: 27px;
-	border-radius: 14px;
+    width: 140px;
+    height: 303px;
+    position: absolute;
+    overflow: hidden;
+    top: 40px;
+    left: 30px;
+    border-radius: 13px;
 }
 
 #project .scroll img {
@@ -585,7 +586,7 @@ circle {
 .iphone_top {
 	width: 45%;
 	position: absolute;
-	top: 35px;
+	top: 39px;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -761,16 +762,16 @@ circle {
 }
 
 .design_wrap .hover_text>.year {
-	font-size: 20px;
+	font-size: 22px;
 	margin-top: 60px;
 }
 
 .design_wrap .hover_text>.title {
-	font-size: 22px;
+	font-size: 24px;
 }
 
 .design_wrap .hover_text>.icon {
-	font-size: 24px;
+	font-size: 26px;
 }
 .all_scrollFixed{overflow: hidden;}
 .all_scrollFixed::before {
@@ -858,14 +859,14 @@ circle {
 .contact_aera .tit {
 	width: 100%;
 	color: #4586ef;
-	font-size: 75px;
+	font-size: 100px;
 	text-shadow: -1px -1px 3px #ffffff85, 1px -1px 3px #ffffff85, -1px 1px 3px #ffffff85, 1px 1px 3px #ffffff85;
 	text-align: center;
 	margin-bottom: 50px;
 }
 
 .contact_wrap {
-	width: 75%;
+	width: 100%;
 	height: 300px;
 	background-color: #fff;
 	border-radius: 300px;
@@ -879,17 +880,17 @@ circle {
 .contact_wrap .number {
 	width: 45%;
 	border-right: 1px solid var(--primary-color);
-	height: 250px;
+	height: 300px;
 	padding-left: 10%;
-	padding-top: 5%;
+	padding-top: 4%;
 }
 
 .contact_wrap .belief {
 	width: 55%;
 	font-family: 'GmarketSansLight';
 	padding-left: 7%;
-	padding-top: 2%;
-	height: 250px;
+	padding-top: 4%;
+	height: 300px;
 	position: relative;
 }
 
@@ -918,27 +919,30 @@ circle {
 
 .contact_wrap .number span {
 	margin-bottom: 10px;
-	font-size: 16px;
+	font-size: 26px;
 }
 
 .contact_wrap .number span.margin_bot {
 	margin-bottom: 30px;
-	margin-left: 50px;
+	margin-left: 80px;
 }
 
 .contact_wrap .number .fa-solid {
 	margin-right: 10%;
-	font-size: 22px;
+	font-size: 35px;
 }
 
 .contact_wrap .belief span.point {
-	font-size: 22px;
+	font-size: 32px;
 }
 
 .contact_wrap .number .point span,
 .contact_wrap .belief .point span {
 	color: var(--text-color);
 	text-transform: none;
+}
+.contact_wrap .belief .btn{
+	margin-top: -20px;
 }
 #validator{
 	width: 100%;

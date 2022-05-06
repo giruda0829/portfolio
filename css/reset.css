@@ -82,9 +82,9 @@ p {
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   opacity: 0;
-  padding: 10px 15px;
+  padding: 17px 19px;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 50%;
   z-index: 1000;
 }
 
